@@ -1,0 +1,250 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing:0.2px;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+body {
+    background-color: rgb(8, 8, 8);
+    color: white;
+    scroll-behavior: smooth;
+    /* overflow:visible; */
+    
+    
+}
+/* scrollbar width (vertical ke liye width use hoti hai) */
+body::-webkit-scrollbar {
+  width: 10px;
+  
+}
+
+/* track */
+body::-webkit-scrollbar-track {
+  background:black ;
+  width: 10px;
+}
+
+/* thumb */
+body::-webkit-scrollbar-thumb {
+  background:transparent;
+}
+.header {
+       display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    /* top: 0px; */
+    background: black;
+    height: 60px;
+    z-index: 1;
+    width: 100%;
+
+}
+
+.header_right {
+    display: flex;
+/* width: 40vw; */
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 0.5em;
+    margin-left: 30px;
+    /* margin-top: ; */
+
+}
+
+.header_left {
+    width: 50vw;
+    display: flex;
+    gap: 1em;
+    margin-left: 30px;
+    margin-top: 6px;
+    align-items: center;
+}
+
+
+.searchMusic_bar input {
+    width: 100%;
+   
+    background: none;
+    border: none;
+    height: 55px;
+    border-radius: 30px;
+}
+
+.searchMusic_bar input::placeholder{
+    /* font-weight: 600; */
+    font-size: 15px;
+    padding:3px ;
+    color: rgb(153, 153, 153);
+}
+
+.spotify_logo {
+    /* margin-left: 30px;*/
+    /* margin-top: 5px;  */
+}
+
+.home_logo svg {
+    /* margin-top: 23px; */
+    fill: white;
+    /* stroke: grey; */
+    /* stroke-width: 2; */
+    height: 25px;
+    /* background-color: #282829; */
+    margin: 2px;
+    width: 50px;
+    border-radius: 350%;
+}
+
+.home_logo {
+   background-color: #282829;
+    display: flex;
+    align-items: center;
+    border-radius: 60%;
+    width: 50px;
+    height: 50px;
+
+
+
+}
+.home_logo:hover{
+   background-color: #313132f8;
+height: 52px;
+/* width: 52px; */
+cursor: pointer;
+
+
+
+}
+
+.searchMusic_bar {
+    /* margin-top: 23px; */
+    display: flex;
+    align-items: center;
+    background: #282829;
+    padding: 1px;
+    border-radius: 34px;
+    width: 61%;
+    height: 44px;
+
+}
+
+.search_icon {
+    position: relative;
+    padding: 10px;
+    /* display: flex; */
+}
+
+.search_icon2 {
+    /* padding: 0px; */
+    border-left: 1px solid grey;
+    height: 26px;
+    /* display: flex; */
+    padding-left: 14px;
+    padding-right: 18px;
+}
+.search_icon2 > svg{
+   fill: grey;
+}
+
+.search_icon > svg{
+  
+    height: 26px;
+    fill: grey;
+}
+
+.header_options{
+    
+    margin-right: 15px;
+    border-right: 2px solid white;
+    padding-right: 13px;
+    height: 27px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header_options span{
+    
+  color: grey;
+    font-weight: bolder;
+    font-size: 16px;
+    margin-right: 10px;
+}
+.install_app_logo{
+    display: flex;
+    gap: 7px;
+    min-width:7rem;
+    align-items: center;
+}
+.install_app_logo svg{
+   fill: grey;}
+.install_app_logo span{
+       color: grey;
+    font-size: 14px;
+    font-weight: 600;
+}
+.signup_btn{
+    color: grey;
+    font-size: 14px;
+    font-weight: 600;
+    background: none;
+    border: none;
+    /* margin-left: 1em; */
+    min-width: 4rem;
+}
+.header_options span:hover, .signup_btn:hover{
+    color: white;
+    cursor: pointer;
+    transform: translateX(1px);
+    transform: 0.1s;
+    
+}
+ .install_app_logo:hover,.install_app_logo svg:hover,.install_app_logo span:hover{
+   color:white ;
+   fill: white;
+    transform: translateY(-1px);
+    cursor: pointer;
+   
+}
+
+
+.login_btn{
+    background: white;
+    border: none;
+    color: black;
+    font-weight: bolder;
+    font-size: 15px;
+    height: 47px;
+    border-radius: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:20px 27px;
+    
+    min-width: 7rem;
+
+}
+.footer_signupBtn:hover, .white_black_btn:hover{
+   /* padding:22px 28px;
+   height: 48px; */
+   background-color: rgb(220, 220, 220);
+   cursor: pointer;
+   transition: 0.2s;
+}
+@media (max-width:1100px) {
+    .search_icon2, .searchMusic_bar input{
+        display:none;
+        
+    }
+    .searchMusic_bar{
+        background: none;
+    }
+    .search_icon{
+           background: #282829;
+    border-radius: 34px;
+    }
+   
+}
