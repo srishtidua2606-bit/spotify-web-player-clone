@@ -53,5 +53,5 @@ This is a **UI clone only** and does not include functionality like music playba
 - LinkedIn: https://www.linkedin.com/in/srishti-dua-7203443a4/
 
 ---
-
+⭐ Project files are inside the spotify folder
 ⭐ If you like this project, feel free to star the repo!
