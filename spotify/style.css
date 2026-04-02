@@ -1,11 +1,10 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    letter-spacing:0.2px;
+    letter-spacing: 0.2px;
     font-family: 'Poppins', sans-serif;
-    
+
 }
 
 body {
@@ -13,27 +12,29 @@ body {
     color: white;
     scroll-behavior: smooth;
     /* overflow:visible; */
-    
-    
+
+
 }
+
 /* scrollbar width (vertical ke liye width use hoti hai) */
 body::-webkit-scrollbar {
-  width: 10px;
-  
+    width: 10px;
+
 }
 
 /* track */
 body::-webkit-scrollbar-track {
-  background:black ;
-  width: 10px;
+    background: black;
+    width: 10px;
 }
 
 /* thumb */
 body::-webkit-scrollbar-thumb {
-  background:transparent;
+    background: transparent;
 }
+
 .header {
-       display: flex;
+    display: flex;
     align-items: center;
     justify-content: space-between;
     position: fixed;
@@ -47,7 +48,7 @@ body::-webkit-scrollbar-thumb {
 
 .header_right {
     display: flex;
-/* width: 40vw; */
+    /* width: 40vw; */
     align-items: center;
     /* justify-content: space-between; */
     gap: 0.5em;
@@ -68,17 +69,17 @@ body::-webkit-scrollbar-thumb {
 
 .searchMusic_bar input {
     width: 100%;
-   
+
     background: none;
     border: none;
     height: 55px;
     border-radius: 30px;
 }
 
-.searchMusic_bar input::placeholder{
+.searchMusic_bar input::placeholder {
     /* font-weight: 600; */
     font-size: 15px;
-    padding:3px ;
+    padding: 3px;
     color: rgb(153, 153, 153);
 }
 
@@ -100,7 +101,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .home_logo {
-   background-color: #282829;
+    background-color: #282829;
     display: flex;
     align-items: center;
     border-radius: 60%;
@@ -110,11 +111,12 @@ body::-webkit-scrollbar-thumb {
 
 
 }
-.home_logo:hover{
-   background-color: #313132f8;
-height: 52px;
-/* width: 52px; */
-cursor: pointer;
+
+.home_logo:hover {
+    background-color: #313132f8;
+    height: 52px;
+    /* width: 52px; */
+    cursor: pointer;
 
 
 
@@ -146,18 +148,19 @@ cursor: pointer;
     padding-left: 14px;
     padding-right: 18px;
 }
-.search_icon2 > svg{
-   fill: grey;
+
+.search_icon2>svg {
+    fill: grey;
 }
 
-.search_icon > svg{
-  
+.search_icon>svg {
+
     height: 26px;
     fill: grey;
 }
 
-.header_options{
-    
+.header_options {
+
     margin-right: 15px;
     border-right: 2px solid white;
     padding-right: 13px;
@@ -166,27 +169,33 @@ cursor: pointer;
     justify-content: center;
     align-items: center;
 }
-.header_options span{
-    
-  color: grey;
+
+.header_options span {
+
+    color: grey;
     font-weight: bolder;
     font-size: 16px;
     margin-right: 10px;
 }
-.install_app_logo{
+
+.install_app_logo {
     display: flex;
     gap: 7px;
-    min-width:7rem;
+    min-width: 7rem;
     align-items: center;
 }
-.install_app_logo svg{
-   fill: grey;}
-.install_app_logo span{
-       color: grey;
+
+.install_app_logo svg {
+    fill: grey;
+}
+
+.install_app_logo span {
+    color: grey;
     font-size: 14px;
     font-weight: 600;
 }
-.signup_btn{
+
+.signup_btn {
     color: grey;
     font-size: 14px;
     font-weight: 600;
@@ -195,23 +204,28 @@ cursor: pointer;
     /* margin-left: 1em; */
     min-width: 4rem;
 }
-.header_options span:hover, .signup_btn:hover{
+
+.header_options span:hover,
+.signup_btn:hover {
     color: white;
     cursor: pointer;
     transform: translateX(1px);
     transform: 0.1s;
-    
+
 }
- .install_app_logo:hover,.install_app_logo svg:hover,.install_app_logo span:hover{
-   color:white ;
-   fill: white;
+
+.install_app_logo:hover,
+.install_app_logo svg:hover,
+.install_app_logo span:hover {
+    color: white;
+    fill: white;
     transform: translateY(-1px);
     cursor: pointer;
-   
+
 }
 
 
-.login_btn{
+.login_btn {
     background: white;
     border: none;
     color: black;
@@ -222,32 +236,40 @@ cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding:20px 27px;
-    
+    padding: 20px 27px;
+
     min-width: 7rem;
 
 }
-.footer_signupBtn:hover, .white_black_btn:hover{
-   /* padding:22px 28px;
+
+.footer_signupBtn:hover,
+.white_black_btn:hover {
+    /* padding:22px 28px;
    height: 48px; */
-   background-color: rgb(220, 220, 220);
-   cursor: pointer;
-   transition: 0.2s;
+    background-color: rgb(220, 220, 220);
+    cursor: pointer;
+    transition: 0.2s;
 }
+
 @media (max-width:1100px) {
-    .search_icon2, .searchMusic_bar input{
-        display:none;
-        
+
+    .search_icon2,
+    .searchMusic_bar input {
+        display: none;
+
     }
-    .searchMusic_bar{
+
+    .searchMusic_bar {
         background: none;
     }
-    .search_icon{
-           background: #282829;
-    border-radius: 34px;
+
+    .search_icon {
+        background: #282829;
+        border-radius: 34px;
     }
-   
+
 }
+
 .side_bar {
     padding: 16px 16px 8px;
     width: 28vw;
@@ -273,10 +295,12 @@ cursor: pointer;
     font-weight: bold;
     border-radius: 20px;
 }
-.side_bar_header > button:hover{
-   background-color: #313132f8;
-   cursor: pointer;
+
+.side_bar_header>button:hover {
+    background-color: #313132f8;
+    cursor: pointer;
 }
+
 .side_bar_header>p {
     font-weight: bolder;
     font-size: 15px;
@@ -371,9 +395,10 @@ cursor: pointer;
     font-weight: bold;
     margin: 34px 15px;
 }
+
 .language button:hover {
-   transform: translateY(-1px);
-   border: 1.5px solid white;
+    transform: translateY(-1px);
+    border: 1.5px solid white;
 }
 
 /* 🔥 Chrome, Edge, Safari ke liye */
@@ -407,43 +432,49 @@ main {
 
 
 }
-.left_section{
-position: fixed;
-width: 28vw;
-margin-top: 60px;
+
+.left_section {
+    position: fixed;
+    width: 28vw;
+    margin-top: 60px;
 
 }
+
 .right_section {
-       background-color:rgb(15, 15, 15);
+    background-color: rgb(15, 15, 15);
     border-radius: 10px;
     /* width: 100vw; */
     padding: 0px 40px;
-    height:200vh;
+    height: 200vh;
     overflow-x: hidden;
-    overflow-y:visible;
+    overflow-y: visible;
     margin-left: 29%;
     margin-top: 60px;
     padding-right: 0px;
-    
-}
-.right_section::-webkit-scrollbar{
-    width: 0px;
-    display: none;
-   
-}
-.right_section:hover::-webkit-scrollbar{
-    width: 12px;
-   
-    
-}
-.right_section::-webkit-scrollbar-track{
-   background: transparent;
 
 }
-.right_section::-webkit-scrollbar-thumb{
-   background: #888;
-   border-radius: 10px;
- 
+
+.right_section::-webkit-scrollbar {
+    width: 0px;
+    display: none;
+
+}
+
+.right_section:hover::-webkit-scrollbar {
+    width: 12px;
+
+
+}
+
+.right_section::-webkit-scrollbar-track {
+    background: transparent;
+
+}
+
+.right_section::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+
 }
 
 
@@ -455,9 +486,10 @@ margin-top: 60px;
     overflow-x: scroll;
     scrollbar-width: none;
     scroll-behavior: smooth;
-   
-    
+
+
 }
+
 .trending_songs_heading {
     display: flex;
     align-items: center;
@@ -474,9 +506,11 @@ margin-top: 60px;
     display: inline-block;
     margin-top: 10px;
 }
-.trending_songs_heading > h2:hover {
-   text-decoration: underline;
+
+.trending_songs_heading>h2:hover {
+    text-decoration: underline;
 }
+
 .trending_songs_heading a {
     text-decoration: none;
     color: rgb(154, 154, 154);
@@ -484,9 +518,10 @@ margin-top: 60px;
     right: 40px;
     bottom: 7px;
     font-size: 14px;
-    font-weight:bold;
+    font-weight: bold;
 
 }
+
 .trending_songs_heading a:hover {
     text-decoration: underline;
 
@@ -495,7 +530,7 @@ margin-top: 60px;
 
 .trending_songs_main {
     width: 200px;
-    height:fit-content;
+    height: fit-content;
     position: relative;
     /* padding: 10px ; */
 }
@@ -503,13 +538,14 @@ margin-top: 60px;
 .trending_songs_main svg {
     width: 90px;
     margin-bottom: 10px;
-   
-   
+
+
     /* padding: 10px ; */
 }
+
 .trending_songs_main_svg {
     position: relative;
-       width: 170px;
+    width: 170px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -521,12 +557,13 @@ margin-top: 60px;
     border-radius: 10px;
 }
 
-.trending_songs_main:hover{
-    
+.trending_songs_main:hover {
+
     background-color: rgb(98, 98, 98);
     transition: 0.1s;
     border-radius: 10px;
 }
+
 /* .trending_songs_section::before {
     content: "Show all";
     position: absolute;
@@ -541,52 +578,56 @@ margin-top: 60px;
   text-decoration:underline;
 } */
 .play_btn {
-  position:absolute;
+    position: absolute;
 
-  
-  top: 120px;
-  right: 20px;
 
-  width: 50px;
-  height: 50px;
-  background-color: #1db954; /* Spotify green */
-  border-radius: 50%;
-  padding: 15px;
+    top: 120px;
+    right: 20px;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0px 4px 2px rgb(59, 59, 59);
-  /* transform: translateY(0px); */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
+    width: 50px;
+    height: 50px;
+    background-color: #1db954;
+    /* Spotify green */
+    border-radius: 50%;
+    padding: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 2px rgb(59, 59, 59);
+    /* transform: translateY(0px); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
 }
+
 .play_btn::before {
-    
-    
-  content: "";
-  border-left: 20px solid black;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
+
+
+    content: "";
+    border-left: 20px solid black;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
 
 }
+
 .trending_songs_main:hover .play_btn {
-  opacity: 1;
-  transform: translateY(10px);
-  transition: 0.3s ease;
-  transition-delay: 0.1s;
-  transition-duration: 0.2s;
+    opacity: 1;
+    transform: translateY(10px);
+    transition: 0.3s ease;
+    transition-delay: 0.1s;
+    transition-duration: 0.2s;
 }
- /* .trending_songs_main_svg:hover .play_btn {
+
+/* .trending_songs_main_svg:hover .play_btn {
   opacity: 1;
   transform: translateY(10px);
   transition: 0.3s ease;
   transition-delay: 0.1s;
   transition-duration: 0.2s;
 } */
-.play_btn:hover{
+.play_btn:hover {
     width: 52px;
     height: 52px;
     padding: 17px;
@@ -599,7 +640,7 @@ margin-top: 60px;
     width: 200px;
     height: auto;
     padding-bottom: 0px;
-   
+
 
 
 }
@@ -631,10 +672,13 @@ margin-top: 60px;
     /* display: inline-block; */
 
 }
-.song_name:hover, .song_credits:hover{
+
+.song_name:hover,
+.song_credits:hover {
     text-decoration: underline;
     cursor: pointer;
 }
+
 .song_credits>span {
     background-color: #b3b3b3;
     padding: 1px 2px;
@@ -645,27 +689,31 @@ margin-top: 60px;
     font-weight: 700;
 
 }
+
 /* POPULAR ARTISTS SECTION */
 
 
-.popular_artists_main:hover{
-    background-color:rgb(98, 98, 98);
+.popular_artists_main:hover {
+    background-color: rgb(98, 98, 98);
     transition: 0.3s;
     border-radius: 10px;
 }
-.artist_img{
-border-radius: 50%;
+
+.artist_img {
+    border-radius: 50%;
     padding: 10px;
     width: 200px;
     height: 180px;
     padding-bottom: 0px;
 }
-.play_btn2{
+
+.play_btn2 {
     position: absolute;
-    bottom:80px;
-    right:30px;
+    bottom: 80px;
+    right: 30px;
 }
-.popular_artists_section{
+
+.popular_artists_section {
     display: flex;
     /* gap: 10px; */
     width: 100%;
@@ -673,7 +721,8 @@ border-radius: 50%;
     scrollbar-width: none;
     scroll-behavior: smooth;
 }
-.footer{
+
+.footer {
     margin-top: 60px;
     display: flex;
     flex-wrap: wrap;
@@ -685,68 +734,79 @@ border-radius: 50%;
     /* margin-left: 29%; */
 
 }
-.footer_section{
+
+.footer_section {
     line-height: 30px;
 
 }
-.footer_items{
+
+.footer_items {
     color: grey;
     font-size: 16px;
 }
-.footer_items:hover{
+
+.footer_items:hover {
     color: rgb(255, 255, 255);
     font-size: 16px;
     text-decoration: underline;
     cursor: pointer;
 }
-.footer_heading{
+
+.footer_heading {
     font-weight: 600;
 }
-.footer_section1{
+
+.footer_section1 {
     display: flex;
-    gap:7px;
+    gap: 7px;
     flex-direction: row;
     margin: 0px 40px;
     /* background-color: black; */
 }
 
-.footer_section1 a svg{
- 
+.footer_section1 a svg {
+
     width: 20px;
     padding: 1px;
 }
-.footer_section1 a{
- width:35px;
- height: 35px;
- text-align: center;
- display: flex;
- justify-content: center;
-border-radius:50%;
-   background-color: #282829;
-    
-}
-.footer_section1 a:hover{
 
-height: 36px;
+.footer_section1 a {
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #282829;
+
+}
+
+.footer_section1 a:hover {
+
+    height: 36px;
     background-color: grey;
 }
-.copyright_footer{
-color: rgb(141, 141, 141);
-font-size: 13px;
-margin: 40px 0px;
+
+.copyright_footer {
+    color: rgb(141, 141, 141);
+    font-size: 13px;
+    margin: 40px 0px;
 
 }
-.footer_signup_cover{
+
+.footer_signup_cover {
     position: sticky;
     bottom: 0px;
     background-color: black;
-        height: 80px;
+    height: 80px;
     padding: 7px 14px;
 
 }
- .footer_signup{
-        display: flex;
-    background: linear-gradient(90deg, #af2896, #509bf5);;
+
+.footer_signup {
+    display: flex;
+    background: linear-gradient(90deg, #af2896, #509bf5);
+    ;
     height: 66px;
     justify-content: space-between;
     width: 100%;
@@ -756,21 +816,25 @@ margin: 40px 0px;
     z-index: 1;
     padding-right: 27px;
     padding-top: 10px;
- }
- .footer_content{
-        margin-left: 10px;
+}
+
+.footer_content {
+    margin-left: 10px;
     line-height: 22px;
- }
- .footer_content1{
-      font-size: 14px;
-      font-weight: 600;
-      margin-top: 2px;
- }
- .footer_content2{
-      font-size: 15.5px;
-      
- }
- .footer_signupBtn{
+}
+
+.footer_content1 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 2px;
+}
+
+.footer_content2 {
+    font-size: 15.5px;
+
+}
+
+.footer_signupBtn {
     background: white;
     border: none;
     color: black;
@@ -781,100 +845,160 @@ margin: 40px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding:10px 30px;
+    padding: 10px 30px;
     /* margin-bottom:px; */
     min-width: 10rem;
     letter-spacing: 0.3px;
     text-shadow: 0px 0px 1px black;
- }
- @media (max-width:1100px) {
+}
 
-.footer_items{
+@media (max-width:1100px) {
+
+    .footer_items {
         color: grey;
-    font-size: 16px;
-    width: 100px;
-    line-height: 21px;
-    margin-top: 11px;
-   }
-   .footer_section{
+        font-size: 16px;
+        width: 100px;
+        line-height: 21px;
+        margin-top: 11px;
+    }
+
+    .footer_section {
         margin-right: 14px;
-   }
-   .side_footer_list{
-    margin-top: 6px;
-    padding: 8px;
-    display: flex;
-    flex-wrap: wrap;
-    line-height: 1em;
-   }
-   .language button{
+    }
+
+    .side_footer_list {
+        margin-top: 6px;
+        padding: 8px;
+        display: flex;
+        flex-wrap: wrap;
+        line-height: 1em;
+    }
+
+    .language button {
         margin: 11px 0.7em;
-   }
+    }
 
 
 
- }
- @media (max-width:1000px) {
-
-.left_section{
-    display: none;
-}
-.right_section{
-    margin-left: 0px;
-    padding: 0px 12px;
-}
- .footer_content1{
-      font-size: 0.9em;
-      
- }
- .footer_content2{
-      font-size: 0.8em;
-      
- }
-.footer_signupBtn{
-font-size: 12px;
-min-width: 8rem;
- }
- .footer_signup {
-    padding-right: 2px;
- }
- }
- 
- @media (max-width:800px) {
-
-.header_options{
-    display: none;
-}
-.install_cnt{
-    display: none;
-}
-.install_app_logo{
-    min-width: 1em;
-}
-.install_app_logo svg{
-       height: 40px;
-    width: 29px;
-}
-.footer_content{
-    display: flex;
-    align-items: center;
-}
-.footer_content1{
-    display: none;
-}
- }
- @media (max-width:500px) {
-
-.install_app_logo svg{
-      display: none;
-}
-.login_btn{
-       
-    font-size: 10px;
-    height: 44px;
-    
-    padding: 20px 23px;
-    min-width: 5rem;
 }
 
- }
- 
+@media (max-width:1000px) {
+
+    .left_section {
+        display: none;
+    }
+
+    .right_section {
+        margin-left: 0px;
+        padding: 0px 12px;
+    }
+
+    .footer_content1 {
+        font-size: 0.9em;
+
+    }
+
+    .footer_content2 {
+        font-size: 0.8em;
+
+    }
+
+    .footer_signupBtn {
+        font-size: 12px;
+        min-width: 8rem;
+    }
+
+    .footer_signup {
+        padding-right: 2px;
+    }
+}
+
+@media (max-width:800px) {
+
+    .header_options {
+        display: none;
+    }
+
+    .install_cnt {
+        display: none;
+    }
+
+    .install_app_logo {
+        min-width: 1em;
+    }
+
+    .install_app_logo svg {
+        height: 40px;
+        width: 29px;
+    }
+
+    .footer_content {
+        display: flex;
+        align-items: center;
+    }
+
+    .footer_content1 {
+        display: none;
+    }
+}
+
+@media (max-width:500px) {
+
+    .install_app_logo svg {
+        display: none;
+    }
+
+    .login_btn {
+
+        font-size: 10px;
+        height: 44px;
+
+        padding: 20px 23px;
+        min-width: 5rem;
+    }
+
+    .footer_content2 {
+        display: none;
+    }
+
+    .footer_signup {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer_signup_cover {
+        min-width: 10rem;
+    }
+
+    .footer_signupBtn {
+        min-width: 12rem;
+    }
+
+    .footer_section {
+        margin-bottom: 10px;
+    }
+
+    .footer_items {
+        line-height: 18px;
+    }
+
+    .searchMusic_bar {
+        display: none;
+    }
+}
+
+@media (max-width:400px) {
+
+    .trending_songs_heading_showall {
+        display: none;
+    }
+
+    .header_left {
+        margin-left: 10px;
+    }
+
+    .header_right {
+        margin-left: 10px;
+    }
+}
